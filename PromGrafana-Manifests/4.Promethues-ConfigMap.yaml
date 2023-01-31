@@ -10,7 +10,10 @@ data:
     scrape_configs:
     - job_name: 'prometheus'
       static_configs:
-      - targets: ['localhost:9090']  
+      - targets: ['localhost:9090']
+    - job_name: 'Prometheus-Actual'
+      static_configs:
+      - targets: ['129.154.40.209:30400']    
   datasource.yml: |-
     apiVersion: 1
     datasources:
